@@ -1,0 +1,110 @@
+[
+    {
+      "id": "001",
+      "image": "https://example.com/image001.jpg",
+      "estate_title": "Charming Family Retreat",
+      "segment_name": "Single-family homes",
+      "description": "Charming single-family home in a quiet neighborhood. Close to schools and parks.",
+      "price": "$300,000",
+      "status": "sale",
+      "area": "1500 sq ft",
+      "location": "123 Main St, Anytown, CA 12345",
+      "facilities": ["living room", "swimming pool", "kitchen"]
+    },
+    {
+      "id": "002",
+      "image": "https://example.com/image002.jpg",
+      "estate_title": "Modern Urban Townhome",
+      "segment_name": "Townhouses",
+      "description": "Modern townhouse with a spacious layout and attached garage.",
+      "price": "$400,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "456 Elm St, Suburbia, NY 54321",
+      "facilities": ["living room", "kitchen", "patio"]
+    },
+    {
+      "id": "003",
+      "image": "https://example.com/image003.jpg",
+      "estate_title": "City View Skyline Apartment",
+      "segment_name": "Apartments",
+      "description": "Cozy apartment with city views. Close to public transportation.",
+      "price": "$1,500/month",
+      "status": "rent",
+      "area": "800 sq ft",
+      "location": "789 Oak Ave, Villagetown, TX 67890",
+      "facilities": ["living room", "kitchen", "laundry room"]
+    },
+    {
+      "id": "004",
+      "image": "https://example.com/image004.jpg",
+      "estate_title": "Campus Haven for Students",
+      "segment_name": "Student housing",
+      "description": "Spacious student housing complex with study areas and fitness center.",
+      "price": "$800/month (per room)",
+      "status": "rent",
+      "area": "2000 sq ft",
+      "location": "101 Pine Ln, Countryside, FL 98765",
+      "facilities": ["shared living room", "study area", "fitness center"]
+    },
+    {
+      "id": "005",
+      "image": "https://example.com/image005.jpg",
+      "estate_title": "Retirement Oasis for Seniors",
+      "segment_name": "Senior living communities",
+      "description": "Retirement community with various amenities and social activities.",
+      "price": "$3,000/month",
+      "status": "rent",
+      "area": "1200 sq ft",
+      "location": "222 Maple Dr, Hilltop, CO 24680",
+      "facilities": ["community center", "swimming pool", "garden"]
+    },
+    {
+      "id": "006",
+      "image": "https://example.com/image006.jpg",
+      "estate_title": "Beachfront Paradise Getaway",
+      "segment_name": "Vacation rentals",
+      "description": "Beachfront villa with private access to the shoreline. Perfect for family vacations.",
+      "price": "$500/night",
+      "status": "rent",
+      "area": "2500 sq ft",
+      "location": "333 Cedar Ave, Lakeside, WA 13579",
+      "facilities": ["beach access", "deck", "BBQ area"]
+    },
+    {
+      "id": "007",
+      "image": "https://example.com/image007.jpg",
+      "estate_title": "Traditional Family Residence",
+      "segment_name": "Single-family homes",
+      "description": "Traditional single-family home with a spacious backyard. Ideal for families.",
+      "price": "$350,000",
+      "status": "sale",
+      "area": "1600 sq ft",
+      "location": "444 Birch St, Mountainview, OR 97531",
+      "facilities": ["living room", "backyard", "garage"]
+    },
+    {
+      "id": "008",
+      "image": "https://example.com/image008.jpg",
+      "estate_title": "Luxury Skyline Apartment",
+      "segment_name": "Apartments",
+      "description": "Luxury apartment in a high-rise building with panoramic city views.",
+      "price": "$2,500/month",
+      "status": "rent",
+      "area": "1000 sq ft",
+      "location": "555 Pine Ave, Uptown, IL 54321",
+      "facilities": ["balcony", "fitness center", "rooftop terrace"]
+    },
+    {
+      "id": "009",
+      "image": "https://example.com/image009.jpg",
+      "estate_title": "Sleek Urban Townhouse",
+      "segment_name": "Townhouses",
+      "description": "Modern townhouse with a sleek design and attached garage.",
+      "price": "$450,000",
+      "status": "sale",
+      "area": "1700 sq ft",
+      "location": "666 Oak St, Downtown, MA 98765",
+      "facilities": ["living room", "kitchen island", "patio"]
+    }
+  ]
