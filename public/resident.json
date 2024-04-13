@@ -1,7 +1,7 @@
 [
     {
       "id": "001",
-      "image": "https://example.com/image001.jpg",
+      "image": "https://i.ibb.co/rdp9mPk/single.jpg",
       "estate_title": "Charming Family Retreat",
       "segment_name": "Single-family homes",
       "description": "Charming single-family home in a quiet neighborhood. Close to schools and parks.",
@@ -13,7 +13,7 @@
     },
     {
       "id": "002",
-      "image": "https://example.com/image002.jpg",
+      "image": "https://i.ibb.co/Lp3bNh4/town.jpg",
       "estate_title": "Modern Urban Townhome",
       "segment_name": "Townhouses",
       "description": "Modern townhouse with a spacious layout and attached garage.",
@@ -25,7 +25,7 @@
     },
     {
       "id": "003",
-      "image": "https://example.com/image003.jpg",
+      "image": "https://i.ibb.co/PZJk8nd/apartment.jpg",
       "estate_title": "City View Skyline Apartment",
       "segment_name": "Apartments",
       "description": "Cozy apartment with city views. Close to public transportation.",
@@ -37,7 +37,7 @@
     },
     {
       "id": "004",
-      "image": "https://example.com/image004.jpg",
+      "image": "https://i.ibb.co/b3tpRxg/student.jpg",
       "estate_title": "Campus Haven for Students",
       "segment_name": "Student housing",
       "description": "Spacious student housing complex with study areas and fitness center.",
@@ -49,7 +49,7 @@
     },
     {
       "id": "005",
-      "image": "https://example.com/image005.jpg",
+      "image": "https://i.ibb.co/X555MRv/senior.jpg",
       "estate_title": "Retirement Oasis for Seniors",
       "segment_name": "Senior living communities",
       "description": "Retirement community with various amenities and social activities.",
@@ -61,7 +61,7 @@
     },
     {
       "id": "006",
-      "image": "https://example.com/image006.jpg",
+      "image": "https://i.ibb.co/cNLbs1B/vacation.jpg",
       "estate_title": "Beachfront Paradise Getaway",
       "segment_name": "Vacation rentals",
       "description": "Beachfront villa with private access to the shoreline. Perfect for family vacations.",
@@ -73,7 +73,7 @@
     },
     {
       "id": "007",
-      "image": "https://example.com/image007.jpg",
+      "image": "https://i.ibb.co/MppdRPn/traditional.jpg",
       "estate_title": "Traditional Family Residence",
       "segment_name": "Single-family homes",
       "description": "Traditional single-family home with a spacious backyard. Ideal for families.",
@@ -85,7 +85,7 @@
     },
     {
       "id": "008",
-      "image": "https://example.com/image008.jpg",
+      "image": "https://i.ibb.co/3cPtWMc/skylines.jpg",
       "estate_title": "Luxury Skyline Apartment",
       "segment_name": "Apartments",
       "description": "Luxury apartment in a high-rise building with panoramic city views.",
@@ -97,7 +97,7 @@
     },
     {
       "id": "009",
-      "image": "https://example.com/image009.jpg",
+      "image": "https://i.ibb.co/3cPtWMc/skylines.jpg",
       "estate_title": "Sleek Urban Townhouse",
       "segment_name": "Townhouses",
       "description": "Modern townhouse with a sleek design and attached garage.",
