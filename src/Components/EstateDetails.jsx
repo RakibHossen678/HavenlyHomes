@@ -10,10 +10,8 @@ const EstateDetails = () => {
   const {
     image,
     price,
-    status,
     facilities,
     estate_title,
-    description,
     area,
     location,
     segment_name,
