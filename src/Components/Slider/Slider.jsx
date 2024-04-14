@@ -22,7 +22,7 @@ const Slider = () => {
           <h1 className="text-5xl font-semibold">Find Your Dream Home Today!</h1>
           <p className="max-w-xl  ">
             Explore our vast selection of properties and discover the perfect
-            place to call home. Whether you're searching for a cozy cottage or a
+            place to call home. Whether you are searching for a cozy cottage or a
             luxurious penthouse, we have options to suit every lifestyle and
             budget.
           </p>

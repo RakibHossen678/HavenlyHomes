@@ -9,7 +9,8 @@
       "status": "sale",
       "area": "1500 sq ft",
       "location": "123 Main St, Anytown, CA 12345",
-      "facilities": ["living room", "swimming pool", "kitchen"]
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "Long_description": "Charming single-family home in a quiet neighborhood. Close to schools and parks. This cozy cottage features three bedrooms, two bathrooms, and a spacious backyard perfect for family gatherings and outdoor activities. With its warm atmosphere and convenient location, it's the ideal place to call home."
     },
     {
       "id": "002",
@@ -21,7 +22,9 @@
       "status": "sale",
       "area": "1800 sq ft",
       "location": "456 Elm St, Suburbia, NY 54321",
-      "facilities": ["living room", "kitchen", "patio"]
+      "facilities": ["living room", "kitchen", "patio"],
+      "Long_description":"Modern townhouse with a spacious layout and attached garage. This urban loft townhome offers contemporary design and comfortable living spaces spread across three levels. With an open-concept kitchen, sleek finishes, and a private patio, it's the perfect blend of style and functionality."
+      
     },
     {
       "id": "003",
@@ -33,7 +36,9 @@
       "status": "rent",
       "area": "800 sq ft",
       "location": "789 Oak Ave, Villagetown, TX 67890",
-      "facilities": ["living room", "kitchen", "laundry room"]
+      "facilities": ["living room", "kitchen", "laundry room"],
+      "Long_description":"Cozy apartment with city views. Close to public transportation. This cityscape view apartment offers modern living in the heart of the city. With floor-to-ceiling windows, a spacious living area, and contemporary amenities, it's the perfect urban retreat. Enjoy the convenience of nearby shops, restaurants, and entertainment venues."
+
     },
     {
       "id": "004",
@@ -45,7 +50,8 @@
       "status": "rent",
       "area": "2000 sq ft",
       "location": "101 Pine Ln, Countryside, FL 98765",
-      "facilities": ["shared living room", "study area", "fitness center"]
+      "facilities": ["shared living room", "study area", "fitness center"],
+      "Long_description":"Spacious student housing complex with study areas and fitness center. Welcome to campus dormitory residence, where students can thrive academically and socially. Our spacious units offer comfortable living spaces, study areas, and access to on-site amenities such as a fitness center and communal lounge. It's the perfect environment for students to excel in their academic pursuits."
     },
     {
       "id": "005",
@@ -57,7 +63,8 @@
       "status": "rent",
       "area": "1200 sq ft",
       "location": "222 Maple Dr, Hilltop, CO 24680",
-      "facilities": ["community center", "swimming pool", "garden"]
+      "facilities": ["community center", "swimming pool", "garden"],
+      "Long_description":"Retirement community with various amenities and social activities. Welcome to retirement haven community, where seniors can enjoy a vibrant and fulfilling lifestyle. Our community offers a range of amenities, including a community center, swimming pool, and garden, as well as social activities and events to foster connections and camaraderie."
     },
     {
       "id": "006",
@@ -69,7 +76,10 @@
       "status": "rent",
       "area": "2500 sq ft",
       "location": "333 Cedar Ave, Lakeside, WA 13579",
-      "facilities": ["beach access", "deck", "BBQ area"]
+      "facilities": ["beach access", "deck", "BBQ area"],
+      "Long_description":"Beachfront villa with private access to the shoreline. Perfect for family vacations. Welcome to seaside vacation villa, where relaxation meets adventure. This beachfront retreat offers stunning views, private beach access, and outdoor amenities such as a deck and BBQ area. It's the perfect destination for family vacations and unforgettable beach getaways."
+
+
     },
     {
       "id": "007",
@@ -81,7 +91,8 @@
       "status": "sale",
       "area": "1600 sq ft",
       "location": "444 Birch St, Mountainview, OR 97531",
-      "facilities": ["living room", "backyard", "garage"]
+      "facilities": ["living room", "backyard", "garage"],
+      "Long_description":"Traditional single-family home with a spacious backyard. Ideal for families. Welcome to rural family farmhouse, where country charm meets modern comfort. This traditional home features a spacious layout, a backyard perfect for outdoor gatherings, and a garage for convenient storage. It's the ideal setting for creating cherished family memories."
     },
     {
       "id": "008",
@@ -93,11 +104,12 @@
       "status": "rent",
       "area": "1000 sq ft",
       "location": "555 Pine Ave, Uptown, IL 54321",
-      "facilities": ["balcony", "fitness center", "rooftop terrace"]
+      "facilities": ["balcony", "fitness center", "rooftop terrace"],
+      "Long_description":"Luxury apartment in a high-rise building with panoramic city views. Welcome to luxury high-rise penthouse, where elevated living meets breathtaking views. This luxurious apartment offers spacious living areas, premium finishes, and access to amenities such as a balcony, fitness center, and rooftop terrace. It's urban living at its finest."
     },
     {
       "id": "009",
-      "image": "https://i.ibb.co/3cPtWMc/skylines.jpg",
+      "image": "https://i.ibb.co/X555MRv/senior.jpg",
       "estate_title": "Sleek Urban Townhouse",
       "segment_name": "Townhouses",
       "description": "Modern townhouse with a sleek design and attached garage.",
@@ -105,6 +117,8 @@
       "status": "sale",
       "area": "1700 sq ft",
       "location": "666 Oak St, Downtown, MA 98765",
-      "facilities": ["living room", "kitchen island", "patio"]
+      "facilities": ["living room", "kitchen island", "patio"],
+      "Long_description":"Modern townhouse with a sleek design and attached garage. Welcome to contemporary urban townhouse, where style meets functionality. This modern townhouse boasts sleek design elements, an open-concept layout, and premium amenities such as a kitchen island and patio. It's urban living redefined."
+
     }
   ]

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const EstateCard = ({ estate }) => {
   const {
@@ -26,7 +27,7 @@ const EstateCard = ({ estate }) => {
           <h2 className="card-title mb-1">{estate_title}</h2>
           <p>{description}</p>
           <div className="pt-2 flex items-center space-x-2">
-            <h1 className="font-medium">Facilites:</h1>
+            <h1 className="font-medium">Facilities:</h1>
             {facilities.map((facility, idx) => (
               <span key={idx} className="">
                 {facility},
@@ -53,5 +54,8 @@ const EstateCard = ({ estate }) => {
     </div>
   );
 };
+EstateCard.propTypes ={
+    estate:PropTypes.object
+}
 
 export default EstateCard;
