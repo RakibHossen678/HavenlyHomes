@@ -54,7 +54,7 @@ const EstateDetails = () => {
               <p>{location}</p>
             </div>
           </div>
-          <button className="btn my-3 btn-primary">Get Started</button>
+          
         </div>
       </div>
     </div>
