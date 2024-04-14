@@ -25,7 +25,7 @@ const EstateDetails = () => {
       <div className="hero-content flex-col lg:flex-row">
         <img 
           src={image}
-          className="max-w-2xl rounded-lg "
+          className="lg:max-w-2xl rounded-lg "
         />
         <div>
           <h1 className="text-5xl font-bold">
