@@ -1,19 +1,72 @@
+import {  useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../AuthProvider/Authprovider";
+import toast from "react-hot-toast";
 const Navbar = () => {
+  const { user , logOut } = useContext(AuthContext);
+
+  const handleLogOut=()=>{
+    logOut()
+    .then(result=>{
+      toast.success('user Logged out successfully')
+      console.log(result.user)
+    })
+    .catch(error=>{
+      console.log(error)
+    })
+    
+  }
+ 
   const links = (
     <>
       <li>
-        <NavLink to='/' className={({isActive})=>isActive? 'text-[#00BCD4] border-[#00BCD4] border-2 px-2 py-1 rounded-lg' : 'font bold'}>Home</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#00BCD4] border-[#00BCD4] border-2 px-2 py-1 rounded-lg"
+              : "font bold"
+          }
+        >
+          Home
+        </NavLink>
       </li>
 
       <li>
-        <NavLink to='/profile' className={({isActive})=>isActive? 'text-[#00BCD4] border-[#00BCD4] border-2 px-2 py-1 rounded-lg' : 'font bold'}>Update Profile</NavLink>
+        <NavLink
+          to="/profile"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#00BCD4] border-[#00BCD4] border-2 px-2 py-1 rounded-lg"
+              : "font bold"
+          }
+        >
+          Update Profile
+        </NavLink>
       </li>
       <li>
-        <NavLink to='/login' className={({isActive})=>isActive? 'text-[#00BCD4] border-[#00BCD4] border-2 px-2 py-1 rounded-lg' : 'font bold'}>Login</NavLink>
+        <NavLink
+          to="/login"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#00BCD4] border-[#00BCD4] border-2 px-2 py-1 rounded-lg"
+              : "font bold"
+          }
+        >
+          Login
+        </NavLink>
       </li>
       <li>
-        <NavLink to='/register' className={({isActive})=>isActive? 'text-[#00BCD4] border-[#00BCD4] border-2 px-2 py-1 rounded-lg' : 'font bold'}>Register</NavLink>
+        <NavLink
+          to="/register"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#00BCD4] border-[#00BCD4] border-2 px-2 py-1 rounded-lg"
+              : "font bold"
+          }
+        >
+          Register
+        </NavLink>
       </li>
     </>
   );
@@ -45,36 +98,54 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <Link to='/' className=" lg:text-3xl text-xl bg-gradient-to-r from-[#00BCD4] via-blue-500 to-green-400 text-transparent bg-clip-text  animate-gradient bg-300% font-semibold">HavenlyHomes</Link>
+          <Link
+            to="/"
+            className=" lg:text-3xl text-xl bg-gradient-to-r from-[#00BCD4] via-blue-500 to-green-400 text-transparent bg-clip-text  animate-gradient bg-300% font-semibold"
+          >
+            HavenlyHomes
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="space-x-7 menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end space-x-3">
-          <div className="dropdown dropdown-end">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost btn-circle avatar"
-            >
-              <div className="w-10 rounded-full">
-                <img
-                  src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" 
-                />
+          {user ? (
+            <>
+              <div className="dropdown dropdown-end">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost btn-circle avatar"
+                >
+                  <div className="w-10 rounded-full">
+                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                  </div>
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="mt-3 z-[10] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-40"
+                >
+                  <li>
+                    <a className="">Profile</a>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <ul
-              tabIndex={0}
-              className="mt-3 z-[10] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-40"
+              <button
+              onClick={handleLogOut}
+                type="submit"
+                className="bg-[#00BCD4] text-white px-4 rounded-xl py-2"
+              >
+                Logout
+              </button>
+            </>
+          ) : (
+            <Link
+              to="/login"
+              className="bg-[#00BCD4] text-white px-4 rounded-xl py-2"
             >
-              <li>
-                <a className="">
-                  Profile
-                </a>
-              </li>
-            </ul>
-          </div>
-          <Link to='/login' className="bg-[#00BCD4] text-white px-4 rounded-xl py-2">Login</Link>
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </div>
