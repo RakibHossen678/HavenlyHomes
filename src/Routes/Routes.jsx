@@ -5,35 +5,40 @@ import Profile from "../Pages/Profile";
 import Register from "../Components/Register";
 import Login from "../Components/Login";
 import EstateDetails from "../Components/EstateDetails";
+import PrivateRoute from "./PrivateRoute";
 
- const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <MaiLayout></MaiLayout>,
-      children:[
-        {
-            path:'/',
-            element:<Home></Home>,
-            loader:()=>fetch('/resident.json')
-        },
-        {
-            path:'/estate/:id',
-            element:<EstateDetails></EstateDetails>,
-            loader:()=>fetch('/resident.json')
-        },
-        {
-            path:'/profile',
-            element:<Profile></Profile>
-        },
-        {
-            path:'/login',
-            element:<Login></Login>
-        },
-        {
-            path:'/register',
-            element:<Register></Register>
-        }
-      ]
-    },
-  ]);
-  export default router
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MaiLayout></MaiLayout>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+        loader: () => fetch("/resident.json"),
+      },
+      {
+        path: "/estate/:id",
+        element: (
+          <PrivateRoute>
+            <EstateDetails></EstateDetails>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/resident.json"),
+      },
+      {
+        path: "/profile",
+        element: <Profile></Profile>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+    ],
+  },
+]);
+export default router;

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/Authprovider";
 import toast from "react-hot-toast";
 const Login = () => {
-  const {signIn}=useContext(AuthContext)
+  const {signIn,googleLogin,facebookLogin,githubLogin}=useContext(AuthContext)
   const {
     register,
     handleSubmit,
@@ -27,6 +27,36 @@ const Login = () => {
       toast.error(error.message)
     })
     
+  }
+  const handleGoogleLogin=()=>{
+    googleLogin()
+    .then((result)=>{
+      toast.success('Logged in successfully')
+      console.log(result.user)
+    })
+    .catch(()=>{
+      toast.error('Already Logged in')
+    })
+  }
+  const handleFacebookLogin=()=>{
+    facebookLogin()
+    .then((result)=>{
+      toast.success('Logged in successfully')
+      console.log(result.user)
+    })
+    .catch(()=>{
+      toast.error('Already Logged in')
+    })
+  }
+  const handleGithubLogin=()=>{
+    githubLogin()
+    .then((result)=>{
+      toast.success('Logged in successfully')
+      console.log(result.user)
+    })
+    .catch(()=>{
+      toast.error('Already Logged in')
+    })
   }
   return (
     <div className="w-full max-w-md p-8 space-y-3 rounded-xl mx-auto shadow-xl my-7">
@@ -71,13 +101,13 @@ const Login = () => {
         <div className="flex-1 h-px sm:w-16 bg-gray-700"></div>
       </div>
       <div className="flex justify-center space-x-4">
-        <button aria-label="Log in with Google" className="p-3 rounded-sm">
+        <button onClick={handleGoogleLogin} aria-label="Log in with Google" className="p-3 rounded-sm">
         <FaGoogle className="text-2xl"/>
         </button>
-        <button aria-label="Log in with facebook" className="p-3 rounded-sm">
+        <button onClick={handleFacebookLogin} aria-label="Log in with facebook" className="p-3 rounded-sm">
         <FaFacebook className="text-2xl"/>
         </button>
-        <button aria-label="Log in with GitHub" className="p-3 rounded-sm">
+        <button onClick={handleGithubLogin} aria-label="Log in with GitHub" className="p-3 rounded-sm">
         <FaGithub className="text-2xl"/>
         </button>
       </div>
