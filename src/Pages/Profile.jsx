@@ -1,9 +1,14 @@
+import { Helmet } from "react-helmet";
+
 const Profile = () => {
-    return (
-        <div>
-            <h1>profile</h1>
-        </div>
-    );
+  return (
+    <div>
+      <Helmet>
+        <title>Update Profile</title>
+      </Helmet>
+      <h1>profile</h1>
+    </div>
+  );
 };
 
 export default Profile;

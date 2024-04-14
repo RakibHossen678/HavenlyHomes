@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const EstateDetails = () => {
@@ -20,6 +21,9 @@ const EstateDetails = () => {
 
   return (
     <div className="hero my-20 ">
+      <Helmet>
+      <title>HavenlyHomes | Details</title>
+      </Helmet>
       <div className="hero-content flex-col lg:flex-row">
         <img 
           src={image}

@@ -6,11 +6,13 @@ import Register from "../Components/Register";
 import Login from "../Components/Login";
 import EstateDetails from "../Components/EstateDetails";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../Components/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MaiLayout></MaiLayout>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",

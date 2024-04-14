@@ -6,6 +6,7 @@ import { FaGoogle } from "react-icons/fa6";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/Authprovider";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 const Login = () => {
   const {signIn,googleLogin,facebookLogin,githubLogin}=useContext(AuthContext)
   const location=useLocation()
@@ -68,6 +69,9 @@ const Login = () => {
   }
   return (
     <div className="w-full max-w-md p-8 space-y-3 rounded-xl mx-auto shadow-xl my-7">
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
       <h1 className="text-2xl font-bold text-center">Login</h1>
       <p className=" text-center">Login to access your account</p>
       <form onSubmit={handleSubmit(onSubmit)}className="space-y-6">
