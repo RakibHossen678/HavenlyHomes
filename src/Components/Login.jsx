@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -7,8 +7,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/Authprovider";
 import toast from "react-hot-toast";
 import { Helmet } from "react-helmet";
+import { FaRegEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 const Login = () => {
   const {signIn,googleLogin,facebookLogin,githubLogin}=useContext(AuthContext)
+  const [showPassword,setShowPassword]=useState(false)
   const location=useLocation()
   const Navigate=useNavigate()
   console.log(location)
@@ -89,18 +92,20 @@ const Login = () => {
           />
            {errors.email && <span className="text-red-500 py-2">This field is required</span>}
         </div>
-        <div className="space-y-1 text-sm">
+        <div className="space-y-1 relative text-sm ">
           <label htmlFor="password" className="block text-gray-400">
             Password
           </label>
           <input
-            type="password"
+            type= {showPassword ? 'text' : "password"}
             name="password"
             id="password"
             placeholder="Password"
-            className="w-full px-4 py-3 rounded-md border-gray-300 border-2  focus:border-violet-400"
+            className="w-full  px-4 py-3 rounded-md border-gray-300 border-2  focus:border-violet-400"
             {...register("password", { required: true })}
           />
+          <span className="absolute bottom-4 right-2" onClick={()=>setShowPassword(!showPassword)}> {showPassword ? <FaEyeSlash className="text-lg "/> :<FaRegEye className="text-lg" /> } </span>
+          
           {errors.password && <span className="text-red-500 py-2">This field is required</span>}
         </div>
         <button className="block w-full p-3 text-center rounded-sm  bg-[#00BCD4] text-white">

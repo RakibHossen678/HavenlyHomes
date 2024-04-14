@@ -71,7 +71,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="mt-3">
+    <div className="mt-3 z-50 ">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -100,7 +100,7 @@ const Navbar = () => {
           </div>
           <Link
             to="/"
-            className=" lg:text-3xl text-xl bg-gradient-to-r from-[#00BCD4] via-blue-500 to-green-400 text-transparent bg-clip-text z-10 animate-gradient bg-300% font-semibold"
+            className=" lg:text-3xl text-xl bg-gradient-to-r from-[#00BCD4] via-blue-500 to-green-400 text-transparent bg-clip-text z-10 animate-gradient bg-300% font-semibold py-2"
           >
             HavenlyHomes
           </Link>
