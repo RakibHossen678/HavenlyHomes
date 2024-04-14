@@ -13,10 +13,10 @@ const Slider = () => {
       <Swiper
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper"
+        className="mySwiper z-0"
         loop={true}
       >
-        <SwiperSlide className="slide1  bg-cover bg-center object-cover rounded-2xl">
+        <SwiperSlide className="slide1   bg-cover bg-center object-cover rounded-2xl">
           <div className=" flex flex-col justify-center items-center text-white text-center py-52 space-y-4">
 
           <h1 className="text-5xl font-semibold">Find Your Dream Home Today!</h1>

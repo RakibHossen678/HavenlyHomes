@@ -1,12 +1,13 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/Authprovider";
 import { useForm } from "react-hook-form"
 import toast from "react-hot-toast";
 
 
 const Register = () => {
-  const {createUser}=useContext(AuthContext)
+  const {createUser,updateUserProfile}=useContext(AuthContext)
+  const Navigate=useNavigate()
   const {
     register,
     handleSubmit,
@@ -16,7 +17,8 @@ const Register = () => {
   
 
   const onSubmit = (data) => {
-    const {email,password}=data
+    const {name,email,image,password}=data
+    console.log(data)
     if(!passwordRegex.test(password)){
       toast.error('Password should be more than 6 character , must have an uppercase and lowercase letter')
       return
@@ -26,6 +28,12 @@ const Register = () => {
     .then(result=>{
       console.log(result.user)
       toast.success('user created successfully')
+      updateUserProfile(name,image)
+      .then(()=>{
+        toast.success('Successfully update user profile')
+        Navigate('/')
+      })
+      
     })
     .catch(error=>{
       console.log(error)

@@ -3,11 +3,15 @@ import { useForm } from "react-hook-form";
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/Authprovider";
 import toast from "react-hot-toast";
 const Login = () => {
   const {signIn,googleLogin,facebookLogin,githubLogin}=useContext(AuthContext)
+  const location=useLocation()
+  const Navigate=useNavigate()
+  console.log(location)
+
   const {
     register,
     handleSubmit,
@@ -22,6 +26,7 @@ const Login = () => {
     .then(result=>{
       console.log(result.user)
       toast.success('user logged in successfully')
+      Navigate(location?.state ? location.state : '/')
     })
     .catch(error=>{
       toast.error(error.message)
@@ -32,6 +37,7 @@ const Login = () => {
     googleLogin()
     .then((result)=>{
       toast.success('Logged in successfully')
+      Navigate(location?.state ? location.state : '/')
       console.log(result.user)
     })
     .catch(()=>{
@@ -43,6 +49,7 @@ const Login = () => {
     .then((result)=>{
       toast.success('Logged in successfully')
       console.log(result.user)
+      Navigate(location?.state ? location.state : '/')
     })
     .catch(()=>{
       toast.error('Already Logged in')
@@ -53,6 +60,7 @@ const Login = () => {
     .then((result)=>{
       toast.success('Logged in successfully')
       console.log(result.user)
+      Navigate(location?.state ? location.state : '/')
     })
     .catch(()=>{
       toast.error('Already Logged in')

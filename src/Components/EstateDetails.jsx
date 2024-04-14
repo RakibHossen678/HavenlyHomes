@@ -3,10 +3,10 @@ import { useLoaderData, useParams } from "react-router-dom";
 const EstateDetails = () => {
   const { id } = useParams();
   const estates = useLoaderData();
-  console.log(id);
-  console.log(estates);
+  // console.log(id);
+  // console.log(estates);
   const find = estates.find((estate) => estate.id === id);
-  console.log(find);
+  // console.log(find);
   const {
     image,
     price,

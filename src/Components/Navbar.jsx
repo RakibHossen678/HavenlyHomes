@@ -100,7 +100,7 @@ const Navbar = () => {
           </div>
           <Link
             to="/"
-            className=" lg:text-3xl text-xl bg-gradient-to-r from-[#00BCD4] via-blue-500 to-green-400 text-transparent bg-clip-text  animate-gradient bg-300% font-semibold"
+            className=" lg:text-3xl text-xl bg-gradient-to-r from-[#00BCD4] via-blue-500 to-green-400 text-transparent bg-clip-text z-10 animate-gradient bg-300% font-semibold"
           >
             HavenlyHomes
           </Link>
@@ -118,7 +118,8 @@ const Navbar = () => {
                   className="btn btn-ghost btn-circle avatar"
                 >
                   <div className="w-10 rounded-full">
-                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <img src={user?.photoURL || 
+                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_7Nr1EC397vWcF9rTCB5DVERMFhc1LewgmbF2yyVHj1tTz4m5XGnCfX8O72BlNQ2aiA&usqp=CAU"} />
                   </div>
                 </div>
                 <ul
@@ -126,7 +127,7 @@ const Navbar = () => {
                   className="mt-3 z-[10] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-40"
                 >
                   <li>
-                    <a className="">Profile</a>
+                    <a className="">{user?.displayName}</a>
                   </li>
                 </ul>
               </div>
