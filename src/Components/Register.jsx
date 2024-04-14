@@ -17,7 +17,7 @@ const Register = () => {
 
   const onSubmit = (data) => {
     const {email,password}=data
-    if(!passwordRegex.test(passwordRegex)){
+    if(!passwordRegex.test(password)){
       toast.error('Password should be more than 6 character , must have an uppercase and lowercase letter')
       return
 
