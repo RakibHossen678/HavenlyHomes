@@ -12,7 +12,9 @@ import Login from "../Components/Login";
       children:[
         {
             path:'/',
-            element:<Home></Home>
+            element:<Home></Home>,
+            loader:()=>fetch('/resident.json')
+            // loader:
         },
         {
             path:'/profile',
