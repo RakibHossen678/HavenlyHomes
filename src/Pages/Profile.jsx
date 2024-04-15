@@ -3,22 +3,20 @@ import { Helmet } from "react-helmet";
 import { AuthContext } from "../AuthProvider/Authprovider";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
   const { register, handleSubmit } = useForm();
-  const {updateUserProfile,setUser,user}=useContext(AuthContext)
-  const Navigate=useNavigate()
+  const { updateUserProfile, setUser, user } = useContext(AuthContext);
+  const Navigate = useNavigate();
 
   const onSubmit = (data) => {
-    const {name,image}=data
-    updateUserProfile(name,image)
-    .then(()=>
-    {setUser( {...user, displayName: name, photoURL: image} )         
-      toast.success('User profile update successfully')
-      Navigate('/profile')
-    
-    })
+    const { name, image } = data;
+    updateUserProfile(name, image).then(() => {
+      setUser({ ...user, displayName: name, photoURL: image });
+      toast.success("User profile update successfully");
+      Navigate("/profile");
+    });
   };
   return (
     <div className="min-h-[calc(100vh-304px)] my-10">
@@ -27,6 +25,10 @@ const Profile = () => {
       </Helmet>
       <div className="flex flex-col justify-center max-w-lg mx-auto p-6 shadow-md rounded-xl sm:px-12 ">
         <img
+          data-aos="zoom-in-down"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
           src={
             user?.photoURL || "https://source.unsplash.com/100x100/?portrait?1"
           }
@@ -35,7 +37,13 @@ const Profile = () => {
         />
         <div className="space-y-4 text-center divide-y divide-gray-700">
           <div className="my-2 space-y-1">
-            <h2 className="text-xl font-semibold sm:text-2xl">
+            <h2
+              className="text-xl font-semibold sm:text-2xl"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
               {user?.displayName}
             </h2>
           </div>

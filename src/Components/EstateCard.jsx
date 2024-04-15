@@ -21,7 +21,7 @@ const EstateCard = ({ estate }) => {
       </span>
       <div className="card w-96  bg-base-100 shadow-xl ">
         <figure>
-          <img src={image} alt="Shoes" />
+          <img  data-aos="zoom-in"  data-aos-duration="1000" src={image} alt="Shoes" />
         </figure>
         <div className="px-3 py-2">
           <h2 className="card-title mb-1">{estate_title}</h2>
