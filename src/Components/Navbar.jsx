@@ -112,7 +112,7 @@ const Navbar = () => {
           </div>
           <Link
             to="/"
-            className=" lg:text-3xl text-xl bg-gradient-to-r from-[#00BCD4] via-blue-500 to-green-400 text-transparent bg-clip-text z-10 animate-gradient bg-300% font-semibold py-2"data-aos="zoom-in" data-aos-duration="1000"
+            className=" lg:text-3xl text-xl bg-gradient-to-r from-[#00BCD4] via-blue-500 to-green-400 text-transparent bg-clip-text z-10 animate-gradient bg-300% font-semibold py-2"data-aos="zoom-in" data-aos-duration="2000"
           >
             HavenlyHomes
           </Link>
