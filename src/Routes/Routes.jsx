@@ -7,12 +7,13 @@ import Login from "../Components/Login";
 import EstateDetails from "../Components/EstateDetails";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Components/ErrorPage";
+import Contact from "../Pages/Contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MaiLayout></MaiLayout>,
-    errorElement:<ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -30,7 +31,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <Profile></Profile>,
+        element: (
+          <PrivateRoute>
+            <Profile></Profile>,
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
@@ -40,6 +45,10 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
+      {
+        path:'/contact',
+        element:<PrivateRoute><Contact></Contact></PrivateRoute>
+      }
     ],
   },
 ]);

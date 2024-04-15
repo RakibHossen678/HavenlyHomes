@@ -74,7 +74,8 @@ const Authprovider = ({ children }) => {
     githubLogin,
     facebookLogin,
     loading,
-    updateUserProfile
+    updateUserProfile,
+    setUser
   };
   return (
     <AuthContext.Provider value={AuthInfo}>{children}</AuthContext.Provider>

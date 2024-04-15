@@ -68,6 +68,18 @@ const Navbar = () => {
           Register
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#00BCD4] border-[#00BCD4] border-2 px-2 py-1 rounded-lg"
+              : "font bold"
+          }
+        >
+          Contact
+        </NavLink>
+      </li>
     </>
   );
   return (
