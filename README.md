@@ -1,9 +1,5 @@
 # HavenlyHomes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
 - [HavenlyHomes](https://assignment9-b30a7.web.app/) 
 
 ## Features and Characteristics:
