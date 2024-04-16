@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 const ReviewCard = ({review}) => {
     const {img,reviews,name,star}=review
     return (
-        <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md divide-gray-700 shadow-xl">
+        <div className="container flex flex-col w-full max-w-[400px] p-6 mx-auto divide-y rounded-md divide-gray-700 shadow-xl">
         <div className="flex justify-between p-4">
             <div className="flex space-x-4">
                 <div>
@@ -25,5 +26,7 @@ const ReviewCard = ({review}) => {
     </div>
     );
 };
-
+ReviewCard.propTypes ={
+    review:PropTypes.object
+}
 export default ReviewCard;

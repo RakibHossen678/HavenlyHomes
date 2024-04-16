@@ -16,7 +16,7 @@ const Review = () => {
           Listen to the voices of our satisfied customers as they share their experiences with our agency. Our testimonials offer genuine insights into the quality of service we deliver and the relationships we build.
           </p>
         </div>
-      <div className="grid lg:grid-cols-2 gap-20 grid-cols-1 pb-20">
+      <div className="grid lg:grid-cols-4 gap-10 grid-cols-1 pb-20">
         {reviews.map((review, idx) => (
           <ReviewCard key={idx} review={review}></ReviewCard>
         ))}

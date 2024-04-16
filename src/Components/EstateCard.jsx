@@ -19,7 +19,7 @@ const EstateCard = ({ estate }) => {
       <span className="indicator-item badge bg-[#00BCD4] px-4 py-3 text-white">
         {status}
       </span>
-      <div className="card w-96  bg-base-100 shadow-xl ">
+      <div className="card lg:w-96 w-[340px]  bg-base-100 shadow-xl ">
         <figure>
           <img  data-aos="zoom-in"  data-aos-duration="1000" src={image} alt="Shoes" />
         </figure>
