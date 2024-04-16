@@ -10,6 +10,7 @@
 - ** In User Profile page you see image , email, name , photo URL .This page is also a protected route
 - **  By  clicking on 'Update Profile'  button user can update photoURL and name
 
+# npm packages
 
 - [react-hot-toast](https://react-hot-toast.com/) uses  to show alert 
 - [react-helmet-async](https://www.npmjs.com/package/react-helmet-async) uses  to show dynamic routes

@@ -51,16 +51,19 @@ const Profile = () => {
             <div>
               <h2 className="text-2xl font-semibold"></h2>
             </div>
-            <div className="space-y-1 text-center ">
-              <span className=" items-center space-x-2">
+            <div data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="1000"
+              data-aos-duration="2000" className="space-y-1 text-center ">
+              <span  className=" items-center space-x-2">
                 <div className="font-medium">Email :</div>
                 <span className="text-gray-400">
                   {user?.email || "leroy.jenkins@company.com"}
                 </span>
               </span>
-              <span className="flex items-center space-x-2 ">
+              <span className="flex items-center space-x-2 justify-center ">
                 <span className="text-gray-400 max-w-[700px] overflow-hidden ">
-                  <span className="font-medium text-black">PhotoURL :</span>
+                  <span className="font-medium text-black text-center">PhotoURL :</span>
                   <div className="w-full">
                     {user?.photoURL ||
                       "https://source.unsplash.com/100x100/?portrait?1"}

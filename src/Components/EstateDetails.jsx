@@ -25,18 +25,18 @@ const EstateDetails = () => {
       <title>HavenlyHomes | Details</title>
       </Helmet>
       <div className="hero-content flex-col lg:flex-row">
-        <img 
+        <img data-aos="zoom-in-down"  data-aos-duration="1000"
           src={image}
           className="lg:max-w-2xl rounded-lg "
         />
         <div>
-          <h1 className="text-5xl font-bold">
+          <h1 data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="1000" className="text-5xl font-bold">
             {estate_title}
           </h1>
-          <p className="py-6">
+          <p data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="2000" className="py-6">
            {Long_description}
           </p>
-          <div className="pt-2 flex items-center space-x-2">
+          <div data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="3000" className="pt-2 flex items-center space-x-2">
             <h1 className="font-medium">Facilities:</h1>
             {facilities.map((facility, idx) => (
               <span key={idx} className="">
@@ -44,12 +44,12 @@ const EstateDetails = () => {
               </span>
             ))}
           </div>
-          <div className="">
-            <div className="flex justify-between py-2">
+          <div data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="3000" className="">
+            <div data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="3000" className="flex justify-between py-2">
               <p>{price}</p>
               <p>{segment_name}</p>
             </div>
-            <div className="flex justify-between py-2">
+            <div data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="4000" className="flex justify-between py-2">
               <p>{area}</p>
               <p>{location}</p>
             </div>
