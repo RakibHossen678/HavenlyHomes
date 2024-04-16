@@ -4,6 +4,7 @@ import Slider from "../Components/Slider/Slider";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import Services from "../Components/Services";
+import Review from "../Components/Review";
 
 const Home = () => {
   const estates = useLoaderData();
@@ -36,7 +37,7 @@ const Home = () => {
       </div>
       <div className="py-20">
         <div className="flex justify-center items-center flex-col space-y-4 ">
-          <h1 className="text-5xl font-semibold">Our Services for You</h1>
+          <h1 className="text-5xl font-semibold text-center">Our Services for You</h1>
           <p className="max-w-2xl text-center text-gray-500">
             Explore a range of professional services designed to streamline your
             real estate transactions. Whether you're buying, selling, or
@@ -44,11 +45,14 @@ const Home = () => {
             exceeding your expectations.
           </p>
         </div>
-        <div className="flex justify-between items-center pt-10">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto gap-2 justify-between items-center pt-10">
           {services.map((service, id) => (
             <Services key={id} service={service}></Services>
           ))}
         </div>
+      </div>
+      <div className="py-10">
+        <Review></Review>
       </div>
     </div>
   );

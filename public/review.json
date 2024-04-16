@@ -2,21 +2,25 @@
     {
       "img": "https://i.ibb.co/TgQzr3Q/author7.jpg",
       "name": "John Doe",
-      "review": "I had an excellent experience with this company. The staff was friendly and professional, and they helped me find the perfect home for my family. Highly recommended!"
+      "reviews": "I had an excellent experience with this company. The staff was friendly and professional, and they helped me find the perfect home for my family. Highly recommended!",
+      "star": 5
     },
     {
       "img": "https://i.ibb.co/fXzGpPh/author3.jpg",
       "name": "Jane Smith",
-      "review": "I recently sold my home with this agency, and I couldn't be happier with the results. They went above and beyond to market my property effectively and negotiate a great deal."
+      "reviews": "I recently sold my home with this agency, and I couldn't be happier with the results. They went above and beyond to market my property effectively and negotiate a great deal.",
+      "star": 4
     },
     {
       "img": "https://i.ibb.co/Y38Xqjn/author8.jpg",
       "name": "Michael Johnson",
-      "review": "From start to finish, the team at this agency provided exceptional service. They listened to my needs and preferences and found me a home that exceeded my expectations. Thank you!"
+      "reviews": "From start to finish, the team at this agency provided exceptional service. They listened to my needs and preferences and found me a home that exceeded my expectations. Thank you!",
+      "star": 4.8
     },
     {
       "img": "https://i.ibb.co/bFPPq75/author6.jpg",
       "name": "Emily Brown",
-      "review": "I was impressed by the professionalism and dedication of the staff at this agency. They guided me through every step of the homebuying process and made it stress-free. Highly recommend!"
+      "reviews": "I was impressed by the professionalism and dedication of the staff at this agency. They guided me through every step of the homebuying process and made it stress-free. Highly recommend!",
+      "star": 4.5
     }
   ]
