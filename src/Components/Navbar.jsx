@@ -1,22 +1,21 @@
-import {  useContext } from "react";
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/Authprovider";
 import toast from "react-hot-toast";
 const Navbar = () => {
-  const { user , logOut } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
 
-  const handleLogOut=()=>{
+  const handleLogOut = () => {
     logOut()
-    .then(result=>{
-      toast.success('user Logged out successfully')
-      console.log(result.user)
-    })
-    .catch(error=>{
-      console.log(error)
-    })
-    
-  }
- 
+      .then((result) => {
+        toast.success("user Logged out successfully");
+        console.log(result.user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   const links = (
     <>
       <li>
@@ -112,7 +111,9 @@ const Navbar = () => {
           </div>
           <Link
             to="/"
-            className=" lg:text-3xl text-xl bg-gradient-to-r from-[#00BCD4] via-blue-500 to-green-400 text-transparent bg-clip-text z-10 animate-gradient bg-300% font-semibold py-2"data-aos="zoom-in" data-aos-duration="2000"
+            className=" lg:text-3xl text-xl bg-gradient-to-r from-[#00BCD4] via-blue-500 to-green-400 text-transparent bg-clip-text z-10 animate-gradient bg-300% font-semibold py-2"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
           >
             HavenlyHomes
           </Link>
@@ -123,15 +124,29 @@ const Navbar = () => {
         <div className="navbar-end space-x-3">
           {user ? (
             <>
-              <div className="dropdown dropdown-end">
+              <div className="lg:tooltip tooltip-top" data-tip={user?.displayName}>
+              <div className=" w-12  ">
+                    <img className="w-full h-12 hover:border-4 rounded-full"
+                      src={
+                        user?.photoURL ||
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_7Nr1EC397vWcF9rTCB5DVERMFhc1LewgmbF2yyVHj1tTz4m5XGnCfX8O72BlNQ2aiA&usqp=CAU"
+                      }
+                    />
+                  </div>
+              </div>
+              {/* <div className="dropdown dropdown-end">
                 <div
                   tabIndex={0}
                   role="button"
                   className="btn btn-ghost btn-circle avatar"
                 >
                   <div className="w-10 rounded-full">
-                    <img src={user?.photoURL || 
-                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_7Nr1EC397vWcF9rTCB5DVERMFhc1LewgmbF2yyVHj1tTz4m5XGnCfX8O72BlNQ2aiA&usqp=CAU"} />
+                    <img
+                      src={
+                        user?.photoURL ||
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_7Nr1EC397vWcF9rTCB5DVERMFhc1LewgmbF2yyVHj1tTz4m5XGnCfX8O72BlNQ2aiA&usqp=CAU"
+                      }
+                    />
                   </div>
                 </div>
                 <ul
@@ -142,9 +157,9 @@ const Navbar = () => {
                     <a className="">{user?.displayName}</a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <button
-              onClick={handleLogOut}
+                onClick={handleLogOut}
                 type="submit"
                 className="bg-[#00BCD4] text-white px-4 rounded-xl py-2"
               >
