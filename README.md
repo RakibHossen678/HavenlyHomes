@@ -13,7 +13,7 @@
 # npm packages
 
 - [react-hot-toast](https://react-hot-toast.com/) uses  to show alert 
-- [react-helmet-async](https://www.npmjs.com/package/react-helmet-async) uses  to show dynamic routes
+- [sweetalert2](https://sweetalert2.github.io/) uses  to show alert
 - [react-hook-form](https://react-hook-form.com/) uses  to handle user inputs 
 - [AOS Package](https://michalsnik.github.io/aos/) uses  for Animation 
 - [swiper js](https://swiperjs.com/) uses  for slider 

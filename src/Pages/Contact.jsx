@@ -1,4 +1,4 @@
-// import Leaflet from "../Components/Leaflet/Leaflet";
+import Leaflet from "../Components/Leaflet/Leaflet";
 
 
 const Contact = () => {
@@ -89,7 +89,7 @@ const Contact = () => {
         
         </div>
       </section>
-      {/* <Leaflet></Leaflet> */}
+      <Leaflet></Leaflet>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Profile = () => {
   const onSubmit = (data) => {
     const { name, image } = data;
     updateUserProfile(name, image).then(() => {
-      setUser({ ...user, displayName: name, photoURL: image });
+      setUser({ ...user, displayName: name, photoURL: image })
       toast.success("User profile update successfully");
       Navigate("/profile");
     });
