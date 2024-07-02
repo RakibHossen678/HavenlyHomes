@@ -17,3 +17,9 @@
 - [react-hook-form](https://react-hook-form.com/) uses  to handle user inputs 
 - [AOS Package](https://michalsnik.github.io/aos/) uses  for Animation 
 - [swiper js](https://swiperjs.com/) uses  for slider 
+
+#### Cloning and Running the Project
+```sh
+git clone https://github.com/RakibHossen678/HavenlyHomes
+npm install
+npm run dev
